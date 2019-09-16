@@ -16,7 +16,7 @@ import (
 func main() {
 	r := gin.Default()
 	r.GET("/test", func(c *gin.Context) {
-		time.Sleep(10 * time.Second)
+		time.Sleep(5 * time.Second)
 		c.String(http.StatusOK, "Welcome Gin Router")
 	})
 
@@ -43,7 +43,7 @@ func main() {
 	log.Println("Shutdown Server ...")
 
 	// 超时上下文
-	ctx, cancelFunc := context.WithTimeout(context.Background(), 10*time.Second)
+	ctx, cancelFunc := context.WithTimeout(context.Background(), 5*time.Second)
 	defer cancelFunc()
 	// 真正关闭server
 	if err := srv.Shutdown(ctx); err != nil {
