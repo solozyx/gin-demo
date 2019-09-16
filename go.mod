@@ -3,7 +3,7 @@ module github.com/solozyx/gin-demo
 go 1.13
 
 require (
-	github.com/gin-gonic/autotls v0.0.0-20190528142357-3135c7b8d15d // indirect
+	github.com/gin-gonic/autotls v0.0.0-20190528142357-3135c7b8d15d
 	github.com/gin-gonic/gin v1.4.0
 	github.com/go-playground/locales v0.12.1
 	github.com/go-playground/universal-translator v0.16.0
